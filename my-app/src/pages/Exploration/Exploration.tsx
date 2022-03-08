@@ -27,8 +27,15 @@ function Exploration() {
   
     return (<Layout>
         <Grid>
-            <h1>Exploration</h1>
-            <Paper sx={{ padding: '20px', width: "700px", margin: "auto" }}>{question.text}</Paper>
+            <h1>🔮 Exploration</h1>
+            {question.id !== -1 ? askQuestion(): answer()}
+        </Grid>
+      </Layout>);
+
+    
+    function askQuestion() {
+        return (<>
+        <Paper sx={{ padding: '20px', width: "700px", margin: "auto" }}>{question.text}</Paper>
             <div style={{ display: "flex", marginTop: "20px" }}>
                 <ButtonGroup disableElevation variant="contained" sx={{ margin: "auto" }}>
                     <Button onClick={() => updateQuestion(true)} sx={{ backgroundColor: "#4A9D8F"}}>
@@ -42,8 +49,12 @@ function Exploration() {
                     </Button>
                 </ButtonGroup>
             </div>
-        </Grid>
-      </Layout>);
+        </>);
+    }
+
+    function answer() {
+        return <Paper sx={{ padding: '20px', margin: "auto", fontWeight: 700, width: 'fit-content' }}>🎉 You should buy a bicyle! 🎉</Paper>
+    }
 
 
       function updateQuestion(answer: boolean | null) {
