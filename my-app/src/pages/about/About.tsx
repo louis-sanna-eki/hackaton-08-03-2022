@@ -7,7 +7,7 @@ export { About };
 function About() {
     return (<Layout>
       <div>
-        <h1>About</h1>
+        <h1>📖 About</h1>
         <Paper sx={{ padding: '20px' }}>Eki.Hackathon</Paper>
       </div>
     </Layout>);
