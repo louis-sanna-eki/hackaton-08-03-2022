@@ -11,4 +11,4 @@ function About() {
         <Paper sx={{ padding: '20px' }}>Eki.Hackathon</Paper>
       </div>
     </Layout>);
-  }
+}
