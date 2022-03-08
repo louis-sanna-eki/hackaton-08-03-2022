@@ -3,8 +3,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import {About} from './pages/about/About'
-import {Dashboard} from './pages/Dashboard'
+import {About} from './pages/About/About'
+import {Dashboard} from './pages/Dashboard/Dashboard'
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).

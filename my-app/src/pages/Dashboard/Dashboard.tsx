@@ -4,7 +4,7 @@ import Deposits from './Deposits';
 import Orders from './Orders';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
-import { Layout } from '../shared/Layout';
+import { Layout } from '../../shared/Layout';
 
 
 export { Dashboard };

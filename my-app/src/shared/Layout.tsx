@@ -14,7 +14,7 @@ import Container from '@mui/material/Container';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import { mainListItems } from '../pages/listItems';
+import { mainListItems } from './listItems';
 
 
 const drawerWidth: number = 240;
