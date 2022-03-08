@@ -4,7 +4,6 @@ import {
   Route,
 } from "react-router-dom";
 import {About} from './pages/About/About'
-import {Dashboard} from './pages/Dashboard/Dashboard'
 import {Exploration} from './pages/Exploration/Exploration'
 
 
@@ -24,7 +23,6 @@ export default function BasicExample() {
           <Route  path="/" element={<Exploration/>}/>
           <Route  path="/exploration" element={<Exploration/>}/>
           <Route  path="/about" element={<About/>}/>
-          <Route  path="/dashboard" element={<Dashboard/>}/>
         </Routes>
     </Router>
   );
