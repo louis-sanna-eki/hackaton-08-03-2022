@@ -1,5 +1,5 @@
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
@@ -19,7 +19,7 @@ import {Exploration} from './pages/Exploration/Exploration'
 
 export default function BasicExample() {
   return (
-    <Router basename="/hackaton-08-03-2022">
+    <Router>
         <Routes>
           <Route  path="/" element={<Exploration/>}/>
           <Route  path="/exploration" element={<Exploration/>}/>

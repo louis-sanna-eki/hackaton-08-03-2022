@@ -17,10 +17,10 @@ interface Question {
 
 const questionBank = [
     { id: 1, text: "Do you live in a city?" },
-    { id: 2, text: "Are you married?" },
-    { id: 3, text: "Do you have children?" },
-    { id: 4, text: "Do you travel abroad?" },
-    { id: 5, text: "Are you above 40 years old?" },
+    { id: 2, text: "Do you have children?" },
+    { id: 3, text: "Do you travel abroad?" },
+    { id: 4, text: "Are you above 40 years old?" },
+    { id: 5, text: "Do you use public transport?" },
 ] as Question[];
 
 function Exploration() {
