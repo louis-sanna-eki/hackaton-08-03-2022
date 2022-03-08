@@ -31,35 +31,32 @@ function Exploration() {
             <Paper sx={{ padding: '20px', width: "700px", margin: "auto" }}>{question.text}</Paper>
             <div style={{ display: "flex", marginTop: "20px" }}>
                 <ButtonGroup disableElevation variant="contained" sx={{ margin: "auto" }}>
-                    <Button onClick={() => setQuestions(questions.map((_question) => {
-                        if (_question.id !== question.id) {
-                            return _question;
-                        }
-                        return {..._question, answer: true };
-                    }))}>
+                    <Button onClick={() => updateQuestion(true)} sx={{ backgroundColor: "#4A9D8F"}}>
                         Yes
                     </Button>
-                    <Button onClick={() => setQuestions(questions.map((_question) => {
-                        if (_question.id !== question.id) {
-                            return _question;
-                        }
-                        return {..._question, answer: null };
-                    }))}>
+                    <Button onClick={() => updateQuestion(null)} sx={{ backgroundColor: "#4A9D8F"}}>
                         Don't know
                     </Button>
-                    <Button onClick={() => setQuestions(questions.map((_question) => {
-                        if (_question.id !== question.id) {
-                            return _question;
-                        }
-                        return {..._question, answer: false };
-                    }))}>
+                    <Button onClick={() => updateQuestion(false)} sx={{ backgroundColor: "#4A9D8F"}}>
                         No
                     </Button>
                 </ButtonGroup>
             </div>
         </Grid>
       </Layout>);
+
+
+      function updateQuestion(answer: boolean | null) {
+        setQuestions(questions.map((_question) => {
+            if (_question.id !== question.id) {
+                return _question;
+            }
+            return {..._question, answer };
+        }))
+      }
 }
+
+// "#afd9d2"
 
 function getQuestion(questions: Question[]) {
     const unansweredQuestions = getUnansweredQuestions(questions);
