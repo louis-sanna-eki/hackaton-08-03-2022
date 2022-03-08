@@ -4,6 +4,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import {About} from './pages/about/About'
+import {Dashboard} from './pages/Dashboard'
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -20,6 +22,7 @@ export default function BasicExample() {
         <Routes>
           <Route  path="/" element={<Home/>}/>
           <Route  path="/about" element={<About/>}/>
+          <Route  path="/dashboard" element={<Dashboard/>}/>
         </Routes>
     </Router>
   );
@@ -36,10 +39,3 @@ function Home() {
   );
 }
 
-function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-}
