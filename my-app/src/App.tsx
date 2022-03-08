@@ -21,7 +21,7 @@ export default function BasicExample() {
   return (
     <Router>
         <Routes>
-          <Route  path="/" element={<Home/>}/>
+          <Route  path="/" element={<Exploration/>}/>
           <Route  path="/exploration" element={<Exploration/>}/>
           <Route  path="/about" element={<About/>}/>
           <Route  path="/dashboard" element={<Dashboard/>}/>
