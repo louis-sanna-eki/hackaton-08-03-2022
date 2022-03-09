@@ -56,7 +56,7 @@ function Exploration() {
     }
 
     function answer() {
-        return <Paper sx={{ padding: '20px', margin: "auto", fontWeight: 700, width: 'fit-content' }}>🎉 You should buy a bicyle! 🎉</Paper>
+        return <Paper sx={{ padding: '20px', margin: "auto", fontWeight: 700, width: 'fit-content' }}>🎉 You should buy a bicycle! 🎉</Paper>
     }
 
 
